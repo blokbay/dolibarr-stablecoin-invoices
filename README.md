@@ -1,8 +1,10 @@
-# Blokbay for Dolibarr
+# Blokbay for Dolibarr: crypto invoices in USDC and USDT
 
-Customer invoices payable in USDC or USDT. The module adds a **Pay with Blokbay** button to validated customer invoices: it creates a
+Dolibarr USDC and USDT invoices: accept crypto payments on your customer invoices, straight to your own wallet (non-custodial). The
+module adds a **Pay with Blokbay** button to validated customer invoices: it creates a
 Blokbay invoice with the same lines, taxes and total, and puts the payment link on the invoice card, in the invoice PDF and in the
-invoice email. When your customer pays, the signed Blokbay webhook registers the payment on the bank account you choose and the
+invoice email. Your customer pays the stablecoin invoice from a wallet or an exchange on Ethereum, Solana, Base, Polygon, Arbitrum
+or BNB Chain. When your customer pays, the signed Blokbay webhook registers the payment on the bank account you choose and the
 invoice is classified paid.
 
 - Author: Blokbay, mail@blokbay.com, https://blokbay.com
@@ -58,3 +60,5 @@ The secret key and the webhook secret are stored encrypted in the Dolibarr setti
 | Link in the PDF / in the email | `BLOKBAY_ADD_TO_PDF`, `BLOKBAY_ADD_TO_EMAIL` |
 
 With several entities (Multicompany), each entity has its own settings and its webhook URL ends with `?entity=<id>`.
+
+Keywords: Dolibarr USDC, Dolibarr crypto payments, crypto invoice, stablecoin invoice, USDC invoice, USDT invoice, invoice payment link, accept crypto, B2B crypto payments, non-custodial, Web3 invoicing, blockchain invoice, accounts receivable, international payments.
